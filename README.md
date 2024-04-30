@@ -1,4 +1,4 @@
-# Metasploit-for-reconnaissance
+![318634104-93452bc1-249d-4a05-bda6-140c2db75eea](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/f0449365-a1fa-4372-a5e2-a60a64ca1a83)# Metasploit-for-reconnaissance
 # Metasploit
 Metasploit for reconnaissance in pentesting
 
@@ -36,7 +36,7 @@ Type help or a question mark "?" to see the list of all available commands you c
 Port Scanning:
 Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000). msf > nmap -sT 192.168.1810/24 -p1-1000
 OUTPUT:
-![Uploading 318633849-ff252e3e-fe1e-4a93-b754-5d4ced4f68b7.png…]()
+![318633849-ff252e3e-fe1e-4a93-b754-5d4ced4f68b7](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/f2a7e113-9cc7-4a08-a5ab-47b6dc35ecbf)
 
 step4: use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later.
 
@@ -59,20 +59,21 @@ Before beginning, set up the Metasploit database by starting the PostgreSQL serv
 
 MYSQL ENUMERATION
 Find the IP address of the Metasploitable machine first. Then, use the db_nmap command in msfconsole with Nmap flags to scan the MySQL database at 3306 port. db_nmap -sV -sC -p 3306 <metasploitable_ip_address>
-![Uploading 318634104-93452bc1-249d-4a05-bda6-140c2db75eea.png…]()
+![318634104-93452bc1-249d-4a05-bda6-140c2db75eea](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/23a42c7a-bbb5-42e3-a695-6ea655ab5408)
 
 Use the search option to look for an auxiliary module to scan and enumerate the MySQL database. search type:auxiliary mysql
-![Uploading 318634159-fde3f8b6-db49-4248-8f77-39d61ea12557.png…]()
+![318634296-41895fb8-8adf-4e5d-a486-0bb7cfda2f8c](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/2d6b5655-f6b2-48ee-a7ea-3e8351efe49f)
+
 
 use the auxiliary/scanner/mysql/mysql_version module by typing the module name or associated number to scan MySQL version details. use 11 Or: use auxiliary/scanner/mysql/mysql_version
 
 Use the set rhosts command to set the parameter and run the module, as follows:
 
 After scanning, you can also brute force MySQL root account via Metasploit's auxiliary(scanner/mysql/mysql_login) module.
-![Uploading 318634349-e3a3574e-8c7e-4148-9cf5-5064b270f690.png…]()
+![318634349-e3a3574e-8c7e-4148-9cf5-5064b270f690](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/26f11bdb-a652-4c6b-81b8-c59abbee63cb)
 
 set the PASS_FILE parameter to the wordlist path available inside /usr/share/wordlists: set PASS_FILE /usr/share/wordlistss/rockyou.txt Then, specify the IP address of the target machine with the RHOSTS command. set RHOSTS Set BLANK_PASSWORDS to true in case there is no password set for the root account. set BLANK_PASSWORDS true
-![Uploading 318634402-671d8b95-a4c4-4be3-a006-52c6dccf5803.png…]()
+![318634402-671d8b95-a4c4-4be3-a006-52c6dccf5803](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/28a2fb5f-8cf1-449a-a18b-68055506bf19)
 
 
 
