@@ -1,4 +1,4 @@
-![318634104-93452bc1-249d-4a05-bda6-140c2db75eea](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/f0449365-a1fa-4372-a5e2-a60a64ca1a83)# Metasploit-for-reconnaissance
+
 # Metasploit
 Metasploit for reconnaissance in pentesting
 
@@ -47,6 +47,7 @@ OUTPUT:
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules. cd /usr/share /metasploit-framework/modules/auxiliary kali > ls -l
 
 OUTPUT:
+![318634104-93452bc1-249d-4a05-bda6-140c2db75eea](https://github.com/pavankishore-AIDS/Metasploit-for-reconnaissance/assets/94154941/f0449365-a1fa-4372-a5e2-a60a64ca1a83)# Metasploit-for-reconnaissance
 
 Search is a powerful command in Metasploit that you can use to find what you want to locate. msf >search name:Microsoft type:exploit
 
